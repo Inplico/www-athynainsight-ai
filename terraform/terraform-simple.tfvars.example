@@ -1,0 +1,20 @@
+# Example terraform.tfvars for Athyna Insight AI website
+# Copy this to terraform.tfvars and fill in your values
+
+# GCP Project Configuration
+project_id = "your-gcp-project-id"
+region     = "us-central1"
+environment = "dev"
+
+# Notification emails for monitoring alerts
+notification_emails = ["admin@athynainsight.ai", "alerts@athynainsight.ai"]
+
+# Cloud Run Configuration (optional overrides)
+# cloud_run_config = {
+#   cpu                   = "1000m"
+#   memory                = "512Mi"
+#   max_instances         = 10
+#   min_instances         = 0
+#   container_concurrency = 100
+#   timeout_seconds       = 300
+# }

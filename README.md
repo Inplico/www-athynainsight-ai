@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Athyna Insight Website
 
-## Getting Started
+Simple lead capture landing page for collecting early access signups for the building code AI platform.
 
-First, run the development server:
+## Quick Start
+
+### 1. Deploy the Website
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Deploy to Cloud Run (uses existing GCP project)
+./deploy.sh
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Set up DNS (in inplico-code-poc)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The DNS configuration is managed in the main infrastructure repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+cd ../inplico-code-poc/terraform
+terraform apply
 
-## Learn More
+# Get nameservers for domain configuration
+terraform output athyna_nameservers
+```
 
-To learn more about Next.js, take a look at the following resources:
+Update your domain registrar (GoDaddy/Namecheap) with the nameservers from the output.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Lead Capture Form** with three user segments:
+  - Building Code Experts (architects, city officials, technologists)
+  - Real Estate Professionals
+  - Construction Companies (with company size selection)
+- **Loops Integration Ready** - Prepared for email marketing platform
+- **Mobile Responsive** - Optimized for all devices
+- **Fast Loading** - Next.js with server-side rendering
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+├── src/
+│   ├── app/                     # Next.js app router pages
+│   ├── components/
+│   │   ├── layout/              # Header, footer components
+│   │   ├── sections/            # Page sections
+│   │   │   ├── simple-hero.tsx # Hero section
+│   │   │   └── lead-capture.tsx # Lead capture form
+│   │   └── ui/                  # Reusable UI components
+│   └── lib/                     # Utilities and constants
+├── public/
+│   └── images/
+│       └── brand/               # Logo and brand assets
+├── deploy.sh                    # Deployment script
+├── Dockerfile                   # Container configuration
+└── next.config.ts              # Next.js configuration
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
+```
+
+## Deployment
+
+### Manual Deployment
+
+Run the deployment script:
+```bash
+./deploy.sh
+```
+
+### GitHub Actions (Automated)
+
+Push to `main` branch to automatically deploy.
+
+Required GitHub Secrets:
+- `GCP_PROJECT_ID` - Your GCP project ID
+- `GCP_SA_KEY` - Service account key JSON
+
+## Infrastructure
+
+- **Hosting**: Google Cloud Run (serverless containers)
+- **Registry**: Artifact Registry (athyna-insight-ai)
+- **DNS**: Google Cloud DNS (managed via terraform in inplico-code-poc)
+- **SSL**: Google-managed SSL certificates
+- **Load Balancer**: Global HTTPS load balancer
+
+## Environment Variables
+
+When ready to integrate Loops:
+- `LOOPS_API_KEY` - Your Loops API key
+
+## Tech Stack
+
+- Next.js 15 (App Router)
+- TypeScript
+- Tailwind CSS
+- Docker
+- Google Cloud Run
+
+## Related Repositories
+
+- [inplico-code-poc](../inplico-code-poc) - Main infrastructure and building code AI platform
+
+## License
+
+Copyright © 2024 Athyna Insight Inc.
