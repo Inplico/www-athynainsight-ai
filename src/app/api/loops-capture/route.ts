@@ -54,9 +54,8 @@ export async function POST(request: NextRequest) {
 
     // Send welcome email if contact was created successfully
     if (result.success && result.id) {
-      // TODO: Replace with your actual transactional ID from Loops dashboard
-      // Get it from: https://app.loops.so/transactional (after creating the welcome email)
-      const WELCOME_EMAIL_ID = 'YOUR_TRANSACTIONAL_ID_HERE';
+      // Transactional email ID from Loops dashboard
+      const WELCOME_EMAIL_ID = 'cme7obk820gpkz80iendjszqt';
       
       if (WELCOME_EMAIL_ID !== 'YOUR_TRANSACTIONAL_ID_HERE') {
         try {

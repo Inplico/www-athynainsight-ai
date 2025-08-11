@@ -1,0 +1,187 @@
+<mjml>
+  <mj-head>
+    <mj-title>Welcome to Athyna Insight</mj-title>
+    <mj-attributes>
+      <mj-all font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" />
+      <mj-text font-size="16px" line-height="1.6" color="#1f2937" />
+      <mj-button background-color="#f97316" border-radius="6px" font-size="16px" font-weight="600" inner-padding="14px 28px" />
+    </mj-attributes>
+    <mj-style>
+      .stat-value {
+        font-size: 24px !important;
+        font-weight: bold !important;
+        color: #f97316 !important;
+      }
+      .stat-label {
+        font-size: 12px !important;
+        color: #92400e !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+      }
+    </mj-style>
+  </mj-head>
+  
+  <mj-body background-color="#f9fafb">
+    <!-- Header -->
+    <mj-section background-color="#f97316" padding="40px 30px">
+      <mj-column>
+        <mj-text align="center" color="white" font-size="28px" font-weight="700" padding="0">
+          Welcome to Athyna Insight!
+        </mj-text>
+        <mj-text align="center" color="white" font-size="16px" padding-top="10px">
+          The Only Building Code AI You Can Trust
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Main Content -->
+    <mj-section background-color="white" padding="40px 30px">
+      <mj-column>
+        <mj-text font-size="18px">
+          Hi {{firstName | default: "there"}},
+        </mj-text>
+        
+        <mj-text>
+          Thank you for joining Athyna Insight! You're now part of an exclusive group getting early access to <strong>Edmonton's first AI-powered building code assistant</strong>.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Stats Section -->
+    <mj-section background-color="white" padding="0 30px">
+      <mj-column>
+        <mj-text font-size="16px" font-weight="bold" padding-bottom="15px">
+          🚀 What We're Building:
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    
+    <mj-section background-color="white" padding="0 30px">
+      <mj-column width="50%">
+        <mj-text align="center" padding="10px">
+          <span class="stat-value">&lt;2 sec</span><br/>
+          <span class="stat-label">Response Time</span>
+        </mj-text>
+      </mj-column>
+      <mj-column width="50%">
+        <mj-text align="center" padding="10px">
+          <span class="stat-value">100%</span><br/>
+          <span class="stat-label">Expert Validated</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    
+    <mj-section background-color="white" padding="0 30px 30px">
+      <mj-column width="50%">
+        <mj-text align="center" padding="10px">
+          <span class="stat-value">650+</span><br/>
+          <span class="stat-label">Pages Indexed</span>
+        </mj-text>
+      </mj-column>
+      <mj-column width="50%">
+        <mj-text align="center" padding="10px">
+          <span class="stat-value">ABC 2023</span><br/>
+          <span class="stat-label">Latest Code</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- What's Next Section -->
+    <mj-section background-color="white" padding="0 30px">
+      <mj-column>
+        <mj-text font-size="20px" color="#f97316" padding-bottom="15px">
+          📅 What's Next?
+        </mj-text>
+        
+        <mj-text>
+          We're launching our beta in <strong>4-6 weeks</strong>. As an early member, you'll get:
+        </mj-text>
+        
+        <mj-text padding-left="20px">
+          • <strong>First Access</strong> - Be the first to try our AI assistant<br/>
+          • <strong>Founding Member Pricing</strong> - Special rates locked in forever<br/>
+          • <strong>Direct Input</strong> - Your feedback shapes the product<br/>
+          • <strong>Expert Network</strong> - Connect with building code professionals
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- How It Works Section -->
+    <mj-section background-color="white" padding="30px">
+      <mj-column>
+        <mj-text font-size="20px" color="#f97316" padding-bottom="15px">
+          🎯 How It Works
+        </mj-text>
+        
+        <mj-text>
+          Simply ask questions in plain English and get instant, accurate answers:
+        </mj-text>
+        
+        <mj-text padding-left="20px" color="#4b5563">
+          • "What are the setback requirements for RS-1 zoning?"<br/>
+          • "Can I add a secondary suite to this property?"<br/>
+          • "What fire separation is needed between these occupancies?"<br/>
+          • "Show me the egress requirements for assembly buildings"
+        </mj-text>
+        
+        <mj-text padding-top="15px">
+          Every answer includes <strong>direct references</strong> to the Alberta Building Code 2023 and Edmonton Zoning Bylaw, so you can verify and trust the information.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA Button -->
+    <mj-section background-color="white" padding="0 30px 30px">
+      <mj-column>
+        <mj-button href="https://athynainsight.ai" padding="20px 0">
+          Visit Our Website
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Contact Section -->
+    <mj-section background-color="white" padding="0 30px 40px">
+      <mj-column>
+        <mj-text font-size="20px" color="#f97316" padding-bottom="15px">
+          💬 We Want to Hear From You
+        </mj-text>
+        
+        <mj-text>
+          What building code questions do you deal with most often? What would make your work easier? Just reply to this email - I personally read every response.
+        </mj-text>
+        
+        <mj-text padding-top="20px">
+          Welcome aboard!
+        </mj-text>
+        
+        <mj-text>
+          <strong>Maple Rose Furigay</strong><br/>
+          CEO & Co-Founder, Athyna Insight<br/>
+          <em>National Research Council Task Group Member</em><br/>
+          <em>15+ Years Building Code Expertise</em>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section background-color="#f9fafb" padding="30px" border-top="1px solid #e5e7eb">
+      <mj-column>
+        <mj-text align="center" color="#6b7280" font-size="14px">
+          <strong>Athyna Insight Inc.</strong><br/>
+          Building Code AI for Edmonton's Construction Industry<br/>
+          Edmonton, Alberta, Canada
+        </mj-text>
+        
+        <mj-text align="center" padding-top="20px" font-size="14px">
+          <a href="https://athynainsight.ai" style="color: #f97316; text-decoration: none;">Website</a> • 
+          <a href="mailto:hello@athynainsight.ai" style="color: #f97316; text-decoration: none;">Contact</a> • 
+          <a href="{{{ unsubscribe_link }}}" style="color: #f97316; text-decoration: none;">Unsubscribe</a>
+        </mj-text>
+        
+        <mj-text align="center" color="#9ca3af" font-size="12px" padding-top="20px">
+          © 2024 Athyna Insight Inc. All rights reserved.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
