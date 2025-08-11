@@ -31,7 +31,7 @@ async function createCustomProperties() {
   console.log('  • company - for company name');
   console.log('  • createdAt - automatically set by Loops\n');
   
-  const properties = [];
+  const properties: Array<{ name: string; type: string; description: string }> = [];
 
   console.log('📋 Creating custom properties...\n');
   
