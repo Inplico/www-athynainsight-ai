@@ -22,20 +22,16 @@ export async function POST(request: NextRequest) {
       "construction": "construction_companies"
     };
 
-    // Prepare Loops contact data
+    // Prepare Loops contact data using built-in fields
     const loopsData = {
       email: data.email,
       firstName: data.name.split(" ")[0] || data.name,
       lastName: data.name.split(" ").slice(1).join(" ") || "",
-      source: "website_lead_capture",
-      userGroup: data.userType,
-      mailingLists: [mailingListMap[data.userType] || "general"],
-      customFields: {
-        company: data.company || "",
-        companySize: data.companySize || "",
-        userType: data.userType,
-        signupDate: new Date().toISOString(),
-      },
+      source: "athynainsight.ai", // Track that they came from our website
+      userGroup: data.userType, // Using built-in userGroup field for segmentation
+      company: data.company || "", // Using built-in company field
+      // Note: createdAt is automatically set by Loops
+      // mailingLists can be added once created in Loops dashboard
     };
 
     // Send to Loops

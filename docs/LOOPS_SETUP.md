@@ -1,35 +1,25 @@
 # Loops Email Setup - Quick Start Guide
 
-This guide will get your email collection working in **5 minutes**.
+This guide will get your email collection working in **3 minutes**.
 
-## Prerequisites
-- [x] Loops account created at https://loops.so
-- [x] DNS records configured (already done via terraform)
-- [x] API key in GitHub Secrets (already done)
+## What's Already Done ✅
+- DNS records configured (MX, SPF, DKIM)
+- API key in GitHub Secrets
+- API endpoint ready at `/api/loops-capture`
+- Using built-in Loops fields (no custom properties needed!)
 
-## Step 1: Get Your API Key (If Not Already Done)
+## Data We're Collecting
 
-1. Go to https://app.loops.so/settings?page=api
-2. Click "Generate key"
-3. It's already in GitHub Secrets as `LOOPS_API_KEY`
+| Field | Description | Example |
+|-------|-------------|---------|
+| `email` | Email address | user@example.com |
+| `firstName` / `lastName` | Parsed from name field | John Doe |
+| `company` | Company name | ABC Construction |
+| `userGroup` | User type for segmentation | `building-code-expert`, `real-estate`, or `construction` |
+| `source` | Where they signed up | `athynainsight.ai` |
+| `createdAt` | Signup timestamp | Automatically set by Loops |
 
-## Step 2: Create Custom Properties (2 minutes)
-
-Go to https://app.loops.so/audience/properties and add these 3 properties:
-
-| Property Name | Type | Description |
-|--------------|------|-------------|
-| `userType` | Text | User segment (building-code-expert, real-estate, construction) |
-| `company` | Text | Company name |
-| `signupDate` | Date | When they signed up |
-
-**How to add each property:**
-1. Click "Add property"
-2. Enter the property name exactly as shown above
-3. Select the type
-4. Click "Save"
-
-## Step 3: Create One Welcome Email (3 minutes)
+## Step 1: Create One Welcome Email (3 minutes)
 
 Go to https://app.loops.so/transactional and create ONE transactional email:
 
@@ -287,25 +277,14 @@ Unsubscribe: {{{ unsubscribe_link }}}
 © 2024 Athyna Insight Inc. All rights reserved.
 ```
 
-## Step 4: Get the Transactional ID
+## Step 2: Get the Transactional ID
 
 After creating the email:
 1. Click on your new `welcome_email` transactional
 2. Copy the Transactional ID (looks like: `clh0x3...`)
 3. Save it for the next step
 
-## Step 5: Create an Automation (1 minute)
-
-Go to https://app.loops.so/automations and create a new automation:
-
-1. **Name**: "Welcome Email on Signup"
-2. **Trigger**: Select "Event received"
-3. **Event Name**: `signup_completed`
-4. **Action**: "Send transactional email"
-5. **Select Email**: Choose your `welcome_email`
-6. **Activate** the automation
-
-## Step 6: Update Your API Endpoint
+## Step 3: Update Your API Endpoint
 
 Edit `/src/app/api/loops-capture/route.ts` and replace `YOUR_TRANSACTIONAL_ID_HERE` with your actual ID:
 
