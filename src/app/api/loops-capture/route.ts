@@ -1,43 +1,72 @@
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from "next/server";
 
-export async function POST(request: Request) {
+const LOOPS_API_KEY = process.env.LOOPS_API_KEY;
+const LOOPS_API_URL = "https://app.loops.so/api/v1/contacts/create";
+
+export async function POST(request: NextRequest) {
   try {
-    const data = await request.json()
+    const data = await request.json();
     
-    // TODO: Replace with actual Loops API integration
-    // For now, just log the data and return success
-    console.log('Lead capture data:', data)
-    
-    // When Loops is set up, this will look something like:
-    /*
-    const response = await fetch('https://app.loops.so/api/v1/contacts/create', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${process.env.LOOPS_API_KEY}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email: data.email,
-        firstName: data.name.split(' ')[0],
-        lastName: data.name.split(' ').slice(1).join(' '),
-        userGroup: data.userType,
-        company: data.company,
-        companySize: data.companySize,
-        mailingLists: data.mailingLists,
-      }),
-    })
-    
-    if (!response.ok) {
-      throw new Error('Failed to add contact to Loops')
+    if (!LOOPS_API_KEY) {
+      console.error("Loops API key not configured");
+      return NextResponse.json(
+        { error: "Email service not configured" },
+        { status: 500 }
+      );
     }
-    */
-    
-    return NextResponse.json({ success: true })
+
+    // Map user types to Loops mailing lists
+    const mailingListMap: Record<string, string> = {
+      "building-code-expert": "building_code_experts",
+      "real-estate": "real_estate_professionals",
+      "construction": "construction_companies"
+    };
+
+    // Prepare Loops contact data
+    const loopsData = {
+      email: data.email,
+      firstName: data.name.split(" ")[0] || data.name,
+      lastName: data.name.split(" ").slice(1).join(" ") || "",
+      source: "website_lead_capture",
+      userGroup: data.userType,
+      mailingLists: [mailingListMap[data.userType] || "general"],
+      customFields: {
+        company: data.company || "",
+        companySize: data.companySize || "",
+        userType: data.userType,
+        signupDate: new Date().toISOString(),
+      },
+    };
+
+    // Send to Loops
+    const response = await fetch(LOOPS_API_URL, {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${LOOPS_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(loopsData),
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error("Loops API error:", errorText);
+      throw new Error(`Loops API error: ${response.status}`);
+    }
+
+    const result = await response.json();
+
+    return NextResponse.json({
+      success: true,
+      message: "Successfully subscribed",
+      contactId: result.id,
+    });
+
   } catch (error) {
-    console.error('Error capturing lead:', error)
+    console.error("Error in loops-capture route:", error);
     return NextResponse.json(
-      { error: 'Failed to capture lead' },
+      { error: "Failed to subscribe. Please try again." },
       { status: 500 }
-    )
+    );
   }
 }
