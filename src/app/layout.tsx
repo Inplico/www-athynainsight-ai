@@ -17,14 +17,25 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/images/brand/athyna-logo.png",
+        url: "/favicon.ico",
+        type: "image/x-icon",
+      },
+      {
+        url: "/favicon-16x16.png",
         type: "image/png",
+        sizes: "16x16",
+      },
+      {
+        url: "/favicon-32x32.png",
+        type: "image/png",
+        sizes: "32x32",
       },
     ],
     apple: [
       {
-        url: "/images/brand/athyna-logo.png",
+        url: "/apple-touch-icon.png",
         type: "image/png",
+        sizes: "180x180",
       },
     ],
   },
@@ -39,6 +50,9 @@ export default function RootLayout({
 }: RootLayoutProps): ReactElement {
   return (
     <html lang="en" className="h-full scroll-smooth antialiased">
+      <head>
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
       <body className={inter.className} suppressHydrationWarning>
         <div className="relative flex min-h-screen flex-col">
           <SimpleHeader />
