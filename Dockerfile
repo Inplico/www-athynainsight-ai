@@ -39,10 +39,11 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
 
-# Cloud Run sets PORT environment variable
-EXPOSE $PORT
-
-ENV PORT=$PORT
+# Set default PORT and allow Cloud Run to override
+ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
+
+# Cloud Run sets PORT environment variable at runtime
+EXPOSE $PORT
 
 CMD ["node", "server.js"] 

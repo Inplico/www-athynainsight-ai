@@ -88,20 +88,17 @@ export const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <Container>
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center">
               <Image
-                src="/images/brand/athyna-logo.png"
+                src="/images/brand/Athyna Insight_Secondary Logo_TransparentBG.png"
                 alt="Athyna Insight"
-                width={40}
-                height={40}
-                className="h-10 w-10"
+                width={200}
+                height={50}
+                className="h-12 w-auto"
                 priority
               />
-              <span className="hidden font-bold sm:inline-block">
-                Athyna Insight
-              </span>
             </Link>
             <nav className="ml-6 hidden md:block">
               <ul className="flex space-x-4">
@@ -291,7 +288,7 @@ export const Header: React.FC = () => {
               ? "opacity-100 translate-x-0"
               : "opacity-0 -translate-x-full pointer-events-none"
           }`}
-          style={{ top: "64px", height: "calc(100vh - 64px)" }}
+          style={{ top: "80px", height: "calc(100vh - 80px)" }}
         >
           <div className="flex flex-col h-full overflow-y-auto">
             <div className="divide-y divide-gray-200/10">

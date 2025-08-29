@@ -9,19 +9,16 @@ export const SimpleHeader: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <Container>
-        <div className="flex h-16 items-center justify-center">
-          <Link href="/" className="flex items-center space-x-2">
+        <div className="flex h-20 items-center justify-center">
+          <Link href="/" className="flex items-center">
             <Image
-              src="/images/brand/athyna-logo.png"
+              src="/images/brand/Athyna Insight_Secondary Logo_TransparentBG.png"
               alt="Athyna Insight"
-              width={40}
-              height={40}
-              className="h-10 w-10"
+              width={200}
+              height={50}
+              className="h-12 w-auto"
               priority
             />
-            <span className="font-bold text-lg">
-              Athyna Insight
-            </span>
           </Link>
         </div>
       </Container>

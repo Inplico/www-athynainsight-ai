@@ -13,10 +13,10 @@ export function SimpleFooter(): React.ReactElement {
             Athyna Insight
           </p>
           <p className="text-sm text-gray-400 mb-6">
-            The only building code AI you can trust for legal compliance.
+            Reimagining the Way We Build
           </p>
           <p className="text-xs text-gray-500">
-            &copy; {new Date().getFullYear()} Athyna Insight Inc. All rights reserved.
+            &copy; 2025 Athyna Insight Inc. All rights reserved.
           </p>
         </div>
       </Container>

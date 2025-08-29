@@ -82,11 +82,10 @@ export function LeadCapture() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold tracking-tight mb-4">
-              Join the Building Code Revolution
+              Step Into the Future of Compliance
             </h2>
             <p className="text-xl text-gray-600">
-              Be among the first to experience AI-powered compliance that saves hours of research 
-              while ensuring 100% accuracy.
+              Reserve your spot for early access to trusted, next-generation AI for the built environment.
             </p>
           </div>
 
@@ -106,9 +105,12 @@ export function LeadCapture() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
                   </div>
-                  <h3 className="font-semibold text-lg mb-2">Building Code Expert</h3>
-                  <p className="text-sm text-gray-600">
-                    Architect, City Official, or Architectural Technologist
+                  <h3 className="font-semibold text-lg mb-2">Regulatory Compliance Expert</h3>
+                  <p className="text-sm text-gray-600 mb-2">
+                    Access instant Zoning and Code insights for faster and accurate project reviews.
+                  </p>
+                  <p className="text-xs text-gray-500">
+                    (Municipal Permitting Specialist, Architect/Technologist, Engineer, Building Science Consultant, or Industry Instructor)
                   </p>
                 </button>
 
@@ -122,8 +124,11 @@ export function LeadCapture() {
                     </svg>
                   </div>
                   <h3 className="font-semibold text-lg mb-2">Real Estate Professional</h3>
-                  <p className="text-sm text-gray-600">
-                    Get instant zoning and building code answers
+                  <p className="text-sm text-gray-600 mb-2">
+                    Show clients what's possible - and required - to lease spaces quickly.
+                  </p>
+                  <p className="text-xs text-gray-500">
+                    (Commercial, Industrial, or Property Development)
                   </p>
                 </button>
 
@@ -136,9 +141,12 @@ export function LeadCapture() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
                     </svg>
                   </div>
-                  <h3 className="font-semibold text-lg mb-2">Construction Company</h3>
-                  <p className="text-sm text-gray-600">
-                    Streamline compliance for your projects
+                  <h3 className="font-semibold text-lg mb-2">Construction Industry Rep</h3>
+                  <p className="text-sm text-gray-600 mb-2">
+                    Streamline compliance to reduce permit delays and rework costs.
+                  </p>
+                  <p className="text-xs text-gray-500">
+                    (General Contractor, Project Manager, Journeyman, or Building Maintenance Supervisor)
                   </p>
                 </button>
               </div>
@@ -194,6 +202,7 @@ export function LeadCapture() {
                   type="text"
                   id="company"
                   required={userType === "construction"}
+                  placeholder={userType === "expert" ? '"STAR" FOR REQ.' : ""}
                   value={formData.company}
                   onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
@@ -234,7 +243,12 @@ export function LeadCapture() {
               </div>
 
               <p className="text-xs text-gray-500 text-center">
-                By signing up, you agree to receive updates about Athyna Insight's building code AI platform.
+                By signing up, you consent to receive email updates about Athyna Insight's AI-powered compliance platform. You can
+                opt out at any time by clicking the unsubscribe link in any email. For more details, please review our{" "}
+                <a href="/privacy-policy" className="text-orange-600 hover:text-orange-700 underline">
+                  Privacy Policy
+                </a>
+                .
               </p>
             </form>
           )}
