@@ -85,7 +85,8 @@ export function LeadCapture() {
               Step Into the Future of Compliance
             </h2>
             <p className="text-xl text-gray-600">
-              Reserve your spot for early access to trusted, next-generation AI for the built environment.
+              Reserve your spot for early access to trusted, next-generation AI for<br />
+              the built environment.
             </p>
           </div>
 
@@ -168,7 +169,7 @@ export function LeadCapture() {
 
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Full Name *
+                  First and Last Name *
                 </label>
                 <input
                   type="text"
@@ -196,13 +197,12 @@ export function LeadCapture() {
 
               <div>
                 <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
-                  Company {userType === "construction" && "*"}
+                  Company *
                 </label>
                 <input
                   type="text"
                   id="company"
-                  required={userType === "construction"}
-                  placeholder={userType === "expert" ? '"STAR" FOR REQ.' : ""}
+                  required
                   value={formData.company}
                   onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500"

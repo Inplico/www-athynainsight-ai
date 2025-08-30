@@ -26,9 +26,8 @@ export function SimpleHero(): React.ReactNode {
             </span>
           </div>
           
-          <h1 className="text-4xl font-bold tracking-tight sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-amber-600">
-            Building Code Confusion? Solved<br className="hidden sm:block" />
-            <span className="block mt-2">Instantly!</span>
+          <h1 className="text-4xl font-bold tracking-tight sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-amber-600 pb-2 leading-tight">
+            Building Code Confusion? Solved Instantly!
           </h1>
           
           <p className="mt-6 text-xl leading-8 text-gray-700 max-w-3xl mx-auto">
@@ -37,7 +36,7 @@ export function SimpleHero(): React.ReactNode {
 
           <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3 max-w-2xl mx-auto">
             <div className="flex flex-col items-center">
-              <div className="text-3xl font-bold text-orange-600">50%</div>
+              <div className="text-3xl font-bold text-orange-600">80%</div>
               <div className="text-sm text-gray-600">Time Saved on Compliance</div>
             </div>
             <div className="flex flex-col items-center">
@@ -45,8 +44,8 @@ export function SimpleHero(): React.ReactNode {
               <div className="text-sm text-gray-600">Expert Validated</div>
             </div>
             <div className="flex flex-col items-center">
-              <div className="text-3xl font-bold text-orange-600">3 Codes</div>
-              <div className="text-sm text-gray-600">NBC + ABC + Zoning</div>
+              <div className="text-3xl font-bold text-orange-600">3</div>
+              <div className="text-sm text-gray-600">Regulatory Frameworks</div>
             </div>
           </div>
         </div>
