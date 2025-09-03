@@ -52,31 +52,8 @@ export async function POST(request: NextRequest) {
 
     const result = await response.json();
 
-    // Send welcome email if contact was created successfully
-    if (result.success && result.id) {
-      // Transactional email ID from Loops dashboard
-      const WELCOME_EMAIL_ID = 'cme7obk820gpkz80iendjszqt';
-      
-      try {
-        await fetch('https://app.loops.so/api/v1/transactional', {
-          method: 'POST',
-          headers: {
-            'Authorization': `Bearer ${LOOPS_API_KEY}`,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            transactionalId: WELCOME_EMAIL_ID,
-            email: data.email,
-            dataVariables: {
-              firstName: data.name.split(' ')[0] || data.name,
-            }
-          })
-        });
-      } catch (emailError) {
-        console.error('Failed to send welcome email:', emailError);
-        // Don't fail the signup if email fails
-      }
-    }
+    // Welcome email is now handled by Loops automation (Loop with "Contact added" trigger)
+    // No need to send transactional email here
 
     return NextResponse.json({
       success: true,

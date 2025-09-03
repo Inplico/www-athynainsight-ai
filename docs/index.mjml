@@ -1,3 +1,14 @@
+<!-- 
+  MJML Template for Loops Welcome Email
+  
+  For Campaign Email (Recommended):
+  - Use {{contact.firstName | default: "there"}} for personalization
+  - This pulls from contact properties stored in Loops
+  
+  For Transactional Email:
+  - Use {{firstName}} (data comes from API call)
+  - Set fallback in Loops dashboard
+-->
 <mjml>
   <mj-head>
     <mj-title>Welcome to Athyna Insight</mj-title>
@@ -29,7 +40,7 @@
           Welcome to Athyna Insight!
         </mj-text>
         <mj-text align="center" color="white" font-size="16px" padding-top="10px">
-          The Only Building Code AI You Can Trust
+          AI You Can Trust for Every Building Code Decision
         </mj-text>
       </mj-column>
     </mj-section>
@@ -38,11 +49,11 @@
     <mj-section background-color="white" padding="40px 30px">
       <mj-column>
         <mj-text font-size="18px">
-          Hi {{firstName | default: "there"}},
+          Hi {{contact.firstName | default: "there"}},
         </mj-text>
         
         <mj-text>
-          Thank you for joining Athyna Insight! You're now part of an exclusive group getting early access to <strong>Edmonton's first AI-powered building code assistant</strong>.
+          Thank you for joining us! You're now part of an exclusive group getting early access to <strong>Alberta's first AI-powered building code assistant</strong>.
         </mj-text>
       </mj-column>
     </mj-section>
@@ -59,13 +70,13 @@
     <mj-section background-color="white" padding="0 30px">
       <mj-column width="50%">
         <mj-text align="center" padding="10px">
-          <span class="stat-value">&lt;2 sec</span><br/>
-          <span class="stat-label">Response Time</span>
+          <span class="stat-value">70%</span><br/>
+          <span class="stat-label">Time Saved</span>
         </mj-text>
       </mj-column>
       <mj-column width="50%">
         <mj-text align="center" padding="10px">
-          <span class="stat-value">100%</span><br/>
+          <span class="stat-value">95%+</span><br/>
           <span class="stat-label">Expert Validated</span>
         </mj-text>
       </mj-column>
@@ -74,14 +85,14 @@
     <mj-section background-color="white" padding="0 30px 30px">
       <mj-column width="50%">
         <mj-text align="center" padding="10px">
-          <span class="stat-value">650+</span><br/>
-          <span class="stat-label">Pages Indexed</span>
+          <span class="stat-value">3</span><br/>
+          <span class="stat-label">Regulatory Frameworks</span>
         </mj-text>
       </mj-column>
       <mj-column width="50%">
         <mj-text align="center" padding="10px">
-          <span class="stat-value">ABC 2023</span><br/>
-          <span class="stat-label">Latest Code</span>
+          <span class="stat-value">NBC 2023</span><br/>
+          <span class="stat-label">Alberta Edition</span>
         </mj-text>
       </mj-column>
     </mj-section>
@@ -94,14 +105,14 @@
         </mj-text>
         
         <mj-text>
-          We're launching our beta in <strong>4-6 weeks</strong>. As an early member, you'll get:
+          We're launching our beta this <strong>October</strong>. As an early member, you'll get:
         </mj-text>
         
         <mj-text padding-left="20px">
-          • <strong>First Access</strong> - Be the first to try our AI assistant<br/>
-          • <strong>Founding Member Pricing</strong> - Special rates locked in forever<br/>
-          • <strong>Direct Input</strong> - Your feedback shapes the product<br/>
-          • <strong>Expert Network</strong> - Connect with building code professionals
+          • <strong>Priority Access</strong> - Be the first to explore our AI assistant<br/>
+          • <strong>Founding Member Pricing</strong> – Locked-in rates that never expire<br/>
+          • <strong>Shaping the Future</strong> – Your insights will directly guide our product development<br/>
+          • <strong>Expert Network</strong> - Connect with compliance professionals and industry innovators
         </mj-text>
       </mj-column>
     </mj-section>
@@ -114,18 +125,18 @@
         </mj-text>
         
         <mj-text>
-          Simply ask questions in plain English and get instant, accurate answers:
+          Forget the jargon! Type in an address and ask questions in plain English – get instant, accurate answers:
         </mj-text>
         
         <mj-text padding-left="20px" color="#4b5563">
-          • "What are the setback requirements for RS-1 zoning?"<br/>
-          • "Can I add a secondary suite to this property?"<br/>
-          • "What fire separation is needed between these occupancies?"<br/>
-          • "Show me the egress requirements for assembly buildings"
+          • "Is this property zoned for a mixed-use development?"<br/>
+          • "Can I add a secondary suite to a duplex?"<br/>
+          • "What fire separation is needed between a daycare and a coffee shop?"<br/>
+          • "Show me the egress requirements for a restaurant."
         </mj-text>
         
         <mj-text padding-top="15px">
-          Every answer includes <strong>direct references</strong> to the Alberta Building Code 2023 and Edmonton Zoning Bylaw, so you can verify and trust the information.
+          Each response includes <strong>direct references</strong> to the NBC – 2023 Alberta Edition and local Zoning Bylaws, so you can verify and trust the information.
         </mj-text>
       </mj-column>
     </mj-section>
@@ -147,7 +158,7 @@
         </mj-text>
         
         <mj-text>
-          What building code questions do you deal with most often? What would make your work easier? Just reply to this email - I personally read every response.
+          What would make your work easier? What Code or Bylaw questions come up the most? Just reply to this email - I personally read every response.
         </mj-text>
         
         <mj-text padding-top="20px">
@@ -155,7 +166,7 @@
         </mj-text>
         
         <mj-text>
-          <strong>Maple Rose Furigay</strong><br/>
+          <strong>Maple Rose Furigay, PMP®</strong><br/>
           CEO & Co-Founder, Athyna Insight<br/>
           <em>National Research Council Task Group Member</em><br/>
           <em>15+ Years Building Code Expertise</em>
@@ -168,18 +179,18 @@
       <mj-column>
         <mj-text align="center" color="#6b7280" font-size="14px">
           <strong>Athyna Insight Inc.</strong><br/>
-          Building Code AI for Edmonton's Construction Industry<br/>
+          Building Code AI for Alberta's Construction Industry<br/>
           Edmonton, Alberta, Canada
         </mj-text>
         
         <mj-text align="center" padding-top="20px" font-size="14px">
           <a href="https://athynainsight.ai" style="color: #f97316; text-decoration: none;">Website</a> • 
           <a href="mailto:hello@athynainsight.ai" style="color: #f97316; text-decoration: none;">Contact</a> • 
-          <a href="{{{ unsubscribe_link }}}" style="color: #f97316; text-decoration: none;">Unsubscribe</a>
+          <a href="{{unsubscribe_link}}" style="color: #f97316; text-decoration: none;">Unsubscribe</a>
         </mj-text>
         
         <mj-text align="center" color="#9ca3af" font-size="12px" padding-top="20px">
-          © 2024 Athyna Insight Inc. All rights reserved.
+          © 2025 Athyna Insight Inc. All rights reserved.
         </mj-text>
       </mj-column>
     </mj-section>

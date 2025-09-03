@@ -19,18 +19,42 @@ This guide will get your email collection working in **3 minutes**.
 | `source` | Where they signed up | `athynainsight.ai` |
 | `createdAt` | Signup timestamp | Automatically set by Loops |
 
-## Step 1: Create One Welcome Email (3 minutes)
+## Step 1: Choose Your Welcome Email Approach
 
-Go to https://app.loops.so/transactional and create ONE transactional email:
+### Option A: Loop (Automation) - RECOMMENDED
+**Best for welcome emails that trigger automatically when someone joins**
+
+1. Go to https://app.loops.so/loop-builder
+2. Click "Create a new loop"
+3. Set trigger: **"Contact added"** (this triggers when contacts join via API/form)
+4. Add an email step with the template below
+5. Optionally add filters by userGroup (expert, realEstate, construction)
+6. Activate the loop
+7. Remove the transactional email code from `/api/loops-capture/route.ts` (lines 56-78)
+
+**Note**: The "Contact added" trigger works for contacts added via API, forms, or integrations. It does NOT trigger for CSV uploads or manual additions.
+
+### Option B: Keep Current Transactional Setup
+Your code currently sends a transactional email via API. This works but requires maintaining the email trigger in your code.
+
+To update the transactional email, go to https://app.loops.so/transactional:
 
 ### Email Details:
 - **Name**: `welcome_email`
-- **Subject**: `Welcome to Athyna Insight - Building Code AI for Edmonton`
+- **Subject**: `Welcome to Athyna Insight!`
 - **From Name**: `Athyna Insight`
 - **From Email**: `hello@envelope.athynainsight.ai`
 - **Reply To**: `maple@athynainsight.ai`
 
 ### Email Template (Copy & Paste This):
+
+**For Campaign Email (Recommended):**
+- Use `{{contact.firstName | default: "there"}}` for the greeting
+- This pulls from contact properties stored in Loops
+
+**For Transactional Email:**
+- Use `{{firstName}}` (data comes from API call)
+- Set fallback in Loops dashboard
 
 ```html
 <!DOCTYPE html>
@@ -136,59 +160,59 @@ Go to https://app.loops.so/transactional and create ONE transactional email:
   <div class="container">
     <div class="header">
       <h1>Welcome to Athyna Insight!</h1>
-      <p>The Only Building Code AI You Can Trust</p>
+      <p>AI You Can Trust for Every Building Code Decision</p>
     </div>
     
     <div class="content">
-      <p style="font-size: 18px;">Hi {{firstName | default: "there"}},</p>
+      <p style="font-size: 18px;">Hi {{contact.firstName | default: "there"}},</p>
       
-      <p>Thank you for joining Athyna Insight! You're now part of an exclusive group getting early access to <strong>Edmonton's first AI-powered building code assistant</strong>.</p>
+      <p>Thank you for joining us! You're now part of an exclusive group getting early access to <strong>Alberta's first AI-powered building code assistant</strong>.</p>
       
       <div class="stats">
         <p style="margin: 0;"><strong>🚀 What We're Building:</strong></p>
         <div class="stats-grid">
           <div class="stat">
-            <div class="stat-value">&lt;2 sec</div>
-            <div class="stat-label">Response Time</div>
+            <div class="stat-value">70%</div>
+            <div class="stat-label">Time Saved</div>
           </div>
           <div class="stat">
-            <div class="stat-value">100%</div>
+            <div class="stat-value">95%+</div>
             <div class="stat-label">Expert Validated</div>
           </div>
           <div class="stat">
-            <div class="stat-value">650+</div>
-            <div class="stat-label">Pages Indexed</div>
+            <div class="stat-value">3</div>
+            <div class="stat-label">Regulatory Frameworks</div>
           </div>
           <div class="stat">
-            <div class="stat-value">ABC 2023</div>
-            <div class="stat-label">Latest Code</div>
+            <div class="stat-value">NBC 2023</div>
+            <div class="stat-label">Alberta Edition</div>
           </div>
         </div>
       </div>
       
       <h2>📅 What's Next?</h2>
       
-      <p>We're launching our beta in <strong>4-6 weeks</strong>. As an early member, you'll get:</p>
+      <p>We're launching our beta this <strong>October</strong>. As an early member, you'll get:</p>
       
       <ul>
-        <li><strong>First Access</strong> - Be the first to try our AI assistant</li>
-        <li><strong>Founding Member Pricing</strong> - Special rates locked in forever</li>
-        <li><strong>Direct Input</strong> - Your feedback shapes the product</li>
-        <li><strong>Expert Network</strong> - Connect with building code professionals</li>
+        <li><strong>Priority Access</strong> - Be the first to explore our AI assistant</li>
+        <li><strong>Founding Member Pricing</strong> – Locked-in rates that never expire</li>
+        <li><strong>Shaping the Future</strong> – Your insights will directly guide our product development</li>
+        <li><strong>Expert Network</strong> - Connect with compliance professionals and industry innovators</li>
       </ul>
       
       <h2>🎯 How It Works</h2>
       
-      <p>Simply ask questions in plain English and get instant, accurate answers:</p>
+      <p>Forget the jargon! Type in an address and ask questions in plain English – get instant, accurate answers:</p>
       
       <ul>
-        <li>"What are the setback requirements for RS-1 zoning?"</li>
-        <li>"Can I add a secondary suite to this property?"</li>
-        <li>"What fire separation is needed between these occupancies?"</li>
-        <li>"Show me the egress requirements for assembly buildings"</li>
+        <li>"Is this property zoned for a mixed-use development?"</li>
+        <li>"Can I add a secondary suite to a duplex?"</li>
+        <li>"What fire separation is needed between a daycare and a coffee shop?"</li>
+        <li>"Show me the egress requirements for a restaurant."</li>
       </ul>
       
-      <p>Every answer includes <strong>direct references</strong> to the Alberta Building Code 2023 and Edmonton Zoning Bylaw, so you can verify and trust the information.</p>
+      <p>Each response includes <strong>direct references</strong> to the NBC – 2023 Alberta Edition and local Zoning Bylaws, so you can verify and trust the information.</p>
       
       <div style="text-align: center;">
         <a href="https://athynainsight.ai" class="button">Visit Our Website</a>
@@ -196,11 +220,11 @@ Go to https://app.loops.so/transactional and create ONE transactional email:
       
       <h2>💬 We Want to Hear From You</h2>
       
-      <p>What building code questions do you deal with most often? What would make your work easier? Just reply to this email - I personally read every response.</p>
+      <p>What would make your work easier? What Code or Bylaw questions come up the most? Just reply to this email - I personally read every response.</p>
       
       <p>Welcome aboard!</p>
       
-      <p><strong>Maple Rose Furigay</strong><br>
+      <p><strong>Maple Rose Furigay, PMP®</strong><br>
       CEO & Co-Founder, Athyna Insight<br>
       <em>National Research Council Task Group Member</em><br>
       <em>15+ Years Building Code Expertise</em></p>
@@ -208,17 +232,17 @@ Go to https://app.loops.so/transactional and create ONE transactional email:
     
     <div class="footer">
       <p><strong>Athyna Insight Inc.</strong><br>
-      Building Code AI for Edmonton's Construction Industry<br>
+      Building Code AI for Alberta's Construction Industry<br>
       Edmonton, Alberta, Canada</p>
       
       <p style="margin-top: 20px;">
         <a href="https://athynainsight.ai">Website</a> • 
         <a href="mailto:hello@athynainsight.ai">Contact</a> • 
-        <a href="{{{ unsubscribe_link }}}">Unsubscribe</a>
+        <a href="{{unsubscribe_link}}">Unsubscribe</a>
       </p>
       
       <p style="margin-top: 20px; font-size: 12px; color: #9ca3af;">
-        © 2024 Athyna Insight Inc. All rights reserved.
+        © 2025 Athyna Insight Inc. All rights reserved.
       </p>
     </div>
   </div>
@@ -231,50 +255,50 @@ Go to https://app.loops.so/transactional and create ONE transactional email:
 ```
 Welcome to Athyna Insight!
 
-Hi {{firstName | default: "there"}},
+Hi {{contact.firstName | default: "there"}},
 
-Thank you for joining Athyna Insight! You're now part of an exclusive group getting early access to Edmonton's first AI-powered building code assistant.
+Thank you for joining us! You're now part of an exclusive group getting early access to Alberta's first AI-powered building code assistant.
 
 🚀 WHAT WE'RE BUILDING:
-• <2 second response time
-• 100% expert validated answers
-• 650+ pages of building code indexed
-• Alberta Building Code 2023 (latest version)
+• 70% time saved on compliance
+• 95%+ expert validated answers
+• 3 regulatory frameworks
+• NBC 2023 Alberta Edition
 
 📅 WHAT'S NEXT?
 
-We're launching our beta in 4-6 weeks. As an early member, you'll get:
-• First Access - Be the first to try our AI assistant
-• Founding Member Pricing - Special rates locked in forever
-• Direct Input - Your feedback shapes the product
-• Expert Network - Connect with building code professionals
+We're launching our beta this October. As an early member, you'll get:
+• Priority Access - Be the first to explore our AI assistant
+• Founding Member Pricing – Locked-in rates that never expire
+• Shaping the Future – Your insights will directly guide our product development
+• Expert Network - Connect with compliance professionals and industry innovators
 
 🎯 HOW IT WORKS
 
-Simply ask questions in plain English:
-• "What are the setback requirements for RS-1 zoning?"
-• "Can I add a secondary suite to this property?"
-• "What fire separation is needed between these occupancies?"
-• "Show me the egress requirements for assembly buildings"
+Forget the jargon! Type in an address and ask questions in plain English – get instant, accurate answers:
+• "Is this property zoned for a mixed-use development?"
+• "Can I add a secondary suite to a duplex?"
+• "What fire separation is needed between a daycare and a coffee shop?"
+• "Show me the egress requirements for a restaurant."
 
-Every answer includes direct references to the Alberta Building Code 2023 and Edmonton Zoning Bylaw.
+Each response includes direct references to the NBC – 2023 Alberta Edition and local Zoning Bylaws.
 
 💬 WE WANT TO HEAR FROM YOU
 
-What building code questions do you deal with most often? What would make your work easier? Just reply to this email - I personally read every response.
+What would make your work easier? What Code or Bylaw questions come up the most? Just reply to this email - I personally read every response.
 
 Welcome aboard!
 
-Maple Rose Furigay
+Maple Rose Furigay, PMP®
 CEO & Co-Founder, Athyna Insight
 National Research Council Task Group Member
 15+ Years Building Code Expertise
 
 ---
 Visit our website: https://athynainsight.ai
-Unsubscribe: {{{ unsubscribe_link }}}
+Unsubscribe: {{unsubscribe_link}}
 
-© 2024 Athyna Insight Inc. All rights reserved.
+© 2025 Athyna Insight Inc. All rights reserved.
 ```
 
 ## Step 2: Get the Transactional ID
