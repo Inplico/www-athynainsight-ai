@@ -48,9 +48,10 @@ To update the transactional email, go to https://app.loops.so/transactional:
 
 ### Email Template (Copy & Paste This):
 
-**For Campaign Email (Recommended):**
-- Use `{{contact.firstName | default: "there"}}` for the greeting
+**For Loop (Recommended):**
+- Use `{firstName}` for the greeting  
 - This pulls from contact properties stored in Loops
+- Set fallback to "there" in the Loops editor
 
 **For Transactional Email:**
 - Use `{{firstName}}` (data comes from API call)
@@ -164,7 +165,7 @@ To update the transactional email, go to https://app.loops.so/transactional:
     </div>
     
     <div class="content">
-      <p style="font-size: 18px;">Hi {{contact.firstName | default: "there"}},</p>
+      <p style="font-size: 18px;">Hi {firstName},</p>
       
       <p>Thank you for joining us! You're now part of an exclusive group getting early access to <strong>Alberta's first AI-powered building code assistant</strong>.</p>
       
@@ -172,7 +173,7 @@ To update the transactional email, go to https://app.loops.so/transactional:
         <p style="margin: 0;"><strong>🚀 What We're Building:</strong></p>
         <div class="stats-grid">
           <div class="stat">
-            <div class="stat-value">70%</div>
+            <div class="stat-value">80%</div>
             <div class="stat-label">Time Saved</div>
           </div>
           <div class="stat">
@@ -238,7 +239,7 @@ To update the transactional email, go to https://app.loops.so/transactional:
       <p style="margin-top: 20px;">
         <a href="https://athynainsight.ai">Website</a> • 
         <a href="mailto:hello@athynainsight.ai">Contact</a> • 
-        <a href="{{unsubscribe_link}}">Unsubscribe</a>
+        <a href="{unsubscribe_link}">Unsubscribe</a>
       </p>
       
       <p style="margin-top: 20px; font-size: 12px; color: #9ca3af;">
@@ -255,12 +256,12 @@ To update the transactional email, go to https://app.loops.so/transactional:
 ```
 Welcome to Athyna Insight!
 
-Hi {{contact.firstName | default: "there"}},
+Hi {firstName},
 
 Thank you for joining us! You're now part of an exclusive group getting early access to Alberta's first AI-powered building code assistant.
 
 🚀 WHAT WE'RE BUILDING:
-• 70% time saved on compliance
+• 80% time saved on compliance
 • 95%+ expert validated answers
 • 3 regulatory frameworks
 • NBC 2023 Alberta Edition
@@ -296,7 +297,7 @@ National Research Council Task Group Member
 
 ---
 Visit our website: https://athynainsight.ai
-Unsubscribe: {{unsubscribe_link}}
+Unsubscribe: {unsubscribe_link}
 
 © 2025 Athyna Insight Inc. All rights reserved.
 ```

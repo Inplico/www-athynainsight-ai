@@ -1,9 +1,10 @@
 <!-- 
   MJML Template for Loops Welcome Email
   
-  For Campaign Email (Recommended):
-  - Use {{contact.firstName | default: "there"}} for personalization
+  For Loop (Recommended):
+  - Use {firstName} for personalization
   - This pulls from contact properties stored in Loops
+  - Set fallback to "there" in the Loops editor
   
   For Transactional Email:
   - Use {{firstName}} (data comes from API call)
@@ -49,7 +50,7 @@
     <mj-section background-color="white" padding="40px 30px">
       <mj-column>
         <mj-text font-size="18px">
-          Hi {{contact.firstName | default: "there"}},
+          Hi {firstName},
         </mj-text>
         
         <mj-text>
@@ -70,7 +71,7 @@
     <mj-section background-color="white" padding="0 30px">
       <mj-column width="50%">
         <mj-text align="center" padding="10px">
-          <span class="stat-value">70%</span><br/>
+          <span class="stat-value">80%</span><br/>
           <span class="stat-label">Time Saved</span>
         </mj-text>
       </mj-column>
@@ -186,7 +187,7 @@
         <mj-text align="center" padding-top="20px" font-size="14px">
           <a href="https://athynainsight.ai" style="color: #f97316; text-decoration: none;">Website</a> • 
           <a href="mailto:hello@athynainsight.ai" style="color: #f97316; text-decoration: none;">Contact</a> • 
-          <a href="{{unsubscribe_link}}" style="color: #f97316; text-decoration: none;">Unsubscribe</a>
+          <a href="{unsubscribe_link}" style="color: #f97316; text-decoration: none;">Unsubscribe</a>
         </mj-text>
         
         <mj-text align="center" color="#9ca3af" font-size="12px" padding-top="20px">
