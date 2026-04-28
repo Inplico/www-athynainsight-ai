@@ -56,7 +56,7 @@ export default function ResearchPage(): ReactElement {
             href="/research/introduction"
             className="group relative grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] mb-7 bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-[0_1px_2px_rgba(15,23,42,0.04)] transition-all duration-300 hover:border-orange-500 hover:-translate-y-1 hover:shadow-[0_1px_0_rgba(255,107,53,0.08),0_8px_24px_rgba(15,23,42,0.06),0_28px_64px_rgba(255,107,53,0.10)]"
           >
-            <div className="p-12 sm:p-14 flex flex-col justify-between gap-6 min-h-[360px]">
+            <div className="p-6 sm:p-10 lg:p-14 flex flex-col justify-between gap-6 min-h-[260px] lg:min-h-[360px]">
               <div>
                 <span className="inline-flex items-center gap-2.5 mb-6 px-3 py-1.5 rounded-full bg-orange-100 text-orange-800 text-xs font-semibold tracking-[0.05em] uppercase">
                   <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
@@ -80,7 +80,7 @@ export default function ResearchPage(): ReactElement {
               </div>
             </div>
             <div
-              className="relative min-h-[360px] flex items-center justify-center"
+              className="relative min-h-[140px] sm:min-h-[260px] lg:min-h-[360px] flex items-center justify-center py-5 sm:py-10 lg:py-0"
               style={{
                 background:
                   "radial-gradient(ellipse 70% 60% at 70% 30%, rgba(255,107,53,0.18), transparent 60%), radial-gradient(ellipse 50% 70% at 30% 70%, rgba(0,119,182,0.08), transparent 60%), linear-gradient(135deg, #F8FAFC, #FFFFFF)",
@@ -96,17 +96,17 @@ export default function ResearchPage(): ReactElement {
                   backgroundSize: "32px 32px",
                 }}
               />
-              <div className="relative z-[2] flex flex-col items-center gap-4">
+              <div className="relative z-[2] flex flex-col items-center gap-2 sm:gap-4">
                 <div
-                  className="w-[132px] h-[132px] rounded-[28px] bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white transition-transform duration-500 group-hover:-translate-y-1 group-hover:-rotate-2"
+                  className="w-14 h-14 sm:w-24 sm:h-24 lg:w-[132px] lg:h-[132px] rounded-xl sm:rounded-[20px] lg:rounded-[28px] bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white transition-transform duration-500 group-hover:-translate-y-1 group-hover:-rotate-2"
                   style={{
                     boxShadow:
                       "inset 0 1px 0 rgba(255,255,255,0.25), 0 24px 48px rgba(255,107,53,0.32), 0 4px 12px rgba(15,23,42,0.06)",
                   }}
                 >
-                  <BookOpen className="w-14 h-14" strokeWidth={1.5} />
+                  <BookOpen className="w-6 h-6 sm:w-10 sm:h-10 lg:w-14 lg:h-14" strokeWidth={1.5} />
                 </div>
-                <div className="text-[11px] uppercase tracking-[0.2em] font-semibold text-slate-500">
+                <div className="text-[9px] sm:text-[11px] uppercase tracking-[0.2em] font-semibold text-slate-500">
                   <strong className="text-slate-900">Series</strong> · Introduction
                 </div>
               </div>

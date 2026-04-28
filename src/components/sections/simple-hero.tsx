@@ -34,18 +34,18 @@ export function SimpleHero(): React.ReactNode {
             Fast, accurate and expert-validated. Enter an Alberta address. Get the Bylaw and Code answers you need - in real-time, without the guesswork.
           </p>
 
-          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3 max-w-2xl mx-auto">
-            <div className="flex flex-col items-center">
-              <div className="text-3xl font-bold text-orange-600">80%</div>
-              <div className="text-sm text-gray-600">Time Saved on Compliance</div>
+          <div className="mt-10 sm:mt-12 grid grid-cols-3 gap-3 sm:gap-6 max-w-2xl mx-auto">
+            <div className="flex flex-col items-center text-center px-2 py-4 sm:py-5 bg-white border border-orange-100 rounded-2xl shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+              <div className="text-2xl sm:text-3xl font-bold text-orange-600 tracking-tight">80%</div>
+              <div className="text-[11px] sm:text-sm text-gray-600 leading-tight mt-1.5 sm:mt-2">Time Saved on Compliance</div>
             </div>
-            <div className="flex flex-col items-center">
-              <div className="text-3xl font-bold text-orange-600">95%+</div>
-              <div className="text-sm text-gray-600">Expert Validated</div>
+            <div className="flex flex-col items-center text-center px-2 py-4 sm:py-5 bg-white border border-orange-100 rounded-2xl shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+              <div className="text-2xl sm:text-3xl font-bold text-orange-600 tracking-tight">95%+</div>
+              <div className="text-[11px] sm:text-sm text-gray-600 leading-tight mt-1.5 sm:mt-2">Expert Validated</div>
             </div>
-            <div className="flex flex-col items-center">
-              <div className="text-3xl font-bold text-orange-600">3</div>
-              <div className="text-sm text-gray-600">Regulatory Frameworks</div>
+            <div className="flex flex-col items-center text-center px-2 py-4 sm:py-5 bg-white border border-orange-100 rounded-2xl shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+              <div className="text-2xl sm:text-3xl font-bold text-orange-600 tracking-tight">3</div>
+              <div className="text-[11px] sm:text-sm text-gray-600 leading-tight mt-1.5 sm:mt-2">Regulatory Frameworks</div>
             </div>
           </div>
         </div>
