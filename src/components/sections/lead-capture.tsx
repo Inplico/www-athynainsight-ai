@@ -77,7 +77,7 @@ export function LeadCapture() {
   }
 
   return (
-    <div className="py-24 bg-gradient-to-b from-white to-orange-50">
+    <div id="early-access" className="py-24 bg-gradient-to-b from-white to-orange-50 scroll-mt-20">
       <Container>
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
