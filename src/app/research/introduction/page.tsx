@@ -109,12 +109,40 @@ export default function IntroductionPage(): ReactElement {
         </Container>
       </section>
 
+      {/* Mobile sticky TOC — horizontal scroll */}
+      <nav className="lg:hidden sticky top-16 z-40 bg-white/95 backdrop-blur border-b border-slate-100">
+        <div className="overflow-x-auto">
+          <div className="flex gap-2 px-4 py-3 whitespace-nowrap">
+            {[
+              { id: "premise", label: "Premise" },
+              { id: "article", label: "Introduction" },
+              { id: "papers", label: "Papers" },
+            ].map((item) => {
+              const isCurrent = activeSection === item.id;
+              return (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  className={`shrink-0 px-3.5 py-1.5 rounded-full text-xs font-semibold transition-colors ${
+                    isCurrent
+                      ? "bg-orange-100 text-orange-700"
+                      : "bg-slate-100 text-slate-700 hover:bg-slate-200"
+                  }`}
+                >
+                  {item.label}
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </nav>
+
       {/* WRAPPED: sidebar + (premise + article) */}
       <section className="bg-white py-16">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-10 lg:gap-20 max-w-[1180px] mx-auto">
-            {/* Sidebar */}
-            <aside className="text-[13px] lg:sticky lg:top-[100px] lg:self-start">
+            {/* Sidebar — hidden on mobile, sticky on desktop */}
+            <aside className="hidden lg:block text-[13px] lg:sticky lg:top-[100px] lg:self-start">
               <div className="pb-6 border-b border-slate-100 mb-6">
                 <div className="text-[10px] uppercase tracking-[0.25em] text-slate-500 font-bold mb-3.5">
                   Author
