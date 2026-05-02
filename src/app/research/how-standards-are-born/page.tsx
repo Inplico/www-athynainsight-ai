@@ -57,11 +57,11 @@ export default function PaperPage(): ReactElement {
                 Research
               </Link>
               <span className="mx-2 text-slate-300">/</span>
-              <span className="text-slate-900 font-medium">The Invisible Infrastructure</span>
+              <span className="text-slate-900 font-medium">How Standards Are Born</span>
             </div>
             <div className="inline-flex items-center gap-2">
               <Calendar className="w-3.5 h-3.5" />
-              April 22, 2026
+              April 30, 2026
             </div>
           </div>
         </Container>
@@ -81,16 +81,16 @@ export default function PaperPage(): ReactElement {
           <div className="flex items-center gap-4 mb-8 flex-wrap">
             <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-white border border-slate-100 rounded-full text-xs font-medium text-slate-700 shadow-sm">
               <span className="bg-orange-500 text-white px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-[0.08em]">
-                PAPER 01
+                PAPER 02
               </span>
-              First in series
+              Second in series
             </span>
           </div>
           <h1 className="text-[clamp(40px,6vw,80px)] font-bold tracking-[-0.035em] leading-none text-slate-900 mb-6 max-w-5xl">
-            The Invisible Infrastructure.
+            How Standards Are Born.
           </h1>
           <p className="text-[clamp(20px,2vw,26px)] text-slate-700 leading-tight max-w-3xl mb-12">
-            Why Regulatory Knowledge Shapes the World We Build.
+            The Evolution of Building Codes and Regulatory Systems.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-[auto_1fr_auto_auto] gap-6 items-center p-6 bg-white border border-slate-100 rounded-2xl shadow-sm max-w-3xl">
             <div className="w-11 h-11 rounded-full bg-gradient-to-br from-orange-500 to-blue-600 text-white font-semibold text-[15px] flex items-center justify-center">
@@ -102,17 +102,17 @@ export default function PaperPage(): ReactElement {
             </div>
             <div className="inline-flex items-center gap-2 text-[13px] text-slate-700 font-medium">
               <Calendar className="w-4 h-4 text-slate-400" />
-              April 22, 2026
+              April 30, 2026
             </div>
             <div className="inline-flex items-center gap-2 text-[13px] text-slate-700 font-medium">
               <FileText className="w-4 h-4 text-slate-400" />
-              Paper 01
+              Paper 02
             </div>
           </div>
         </Container>
       </section>
 
-      {/* Mobile sticky TOC — horizontal scroll */}
+      {/* Mobile sticky TOC */}
       <nav className="lg:hidden sticky top-16 z-40 bg-white/95 backdrop-blur border-b border-slate-100">
         <div className="overflow-x-auto">
           <div className="flex gap-2 px-4 py-3 whitespace-nowrap">
@@ -141,11 +141,11 @@ export default function PaperPage(): ReactElement {
         </div>
       </nav>
 
-      {/* WRAPPED: Sidebar + (core, article, outcome, continued) */}
+      {/* WRAPPED: Sidebar + sections */}
       <section className="bg-white py-16">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-10 lg:gap-20 max-w-[1180px] mx-auto">
-            {/* Sidebar — hidden on mobile, sticky on desktop */}
+            {/* Sidebar */}
             <aside className="hidden lg:block text-[13px] lg:sticky lg:top-[100px] lg:self-start">
               <div className="pb-6 border-b border-slate-100 mb-6">
                 <div className="text-[10px] uppercase tracking-[0.25em] text-slate-500 font-bold mb-3.5">
@@ -164,7 +164,7 @@ export default function PaperPage(): ReactElement {
                 </div>
                 <div className="text-xs text-slate-500 inline-flex items-center gap-1.5">
                   <Calendar className="w-3.5 h-3.5 text-slate-400" />
-                  April 22, 2026
+                  April 30, 2026
                 </div>
               </div>
 
@@ -212,7 +212,7 @@ export default function PaperPage(): ReactElement {
               </div>
             </aside>
 
-            {/* Right column: ALL article sections live here so sidebar tracks */}
+            {/* Right column */}
             <div className="min-w-0">
               {/* CORE */}
               <div
@@ -236,112 +236,100 @@ export default function PaperPage(): ReactElement {
                   </span>
                 </div>
                 <p className="relative text-[clamp(20px,2.2vw,26px)] leading-[1.45] text-slate-900 font-medium tracking-[-0.005em]">
-                  Regulatory systems function as invisible infrastructure shaping the built environment,
-                  but their current document-based structure limits how effectively this knowledge can
-                  be accessed, interpreted, and applied in an increasingly complex world.
+                  Standards are designed to create consistency and trust in the built environment,
+                  but increasing complexity is challenging how regulatory knowledge is structured,
+                  interpreted, and applied in practice.
                 </p>
               </div>
 
               {/* ARTICLE */}
               <article id="article" className="max-w-[720px]">
                 <p className="text-[19px] leading-[1.85] text-slate-700 mb-7 first-letter:text-[88px] first-letter:font-bold first-letter:float-left first-letter:leading-[0.85] first-letter:pt-3 first-letter:pr-4 first-letter:text-orange-500 first-letter:tracking-[-0.03em]">
-                  Every building exists within a framework of regulations designed to protect safety,
-                  health, accessibility, and the long-term wellbeing of communities. Building codes,
-                  zoning bylaws, technical standards, and policy guidance collectively form an
-                  invisible infrastructure that shapes how our physical world evolves. These rules
-                  influence where hospitals are built, how homes are designed, how cities adapt to
-                  climate pressures, and how communities recover after disaster.
+                  Standards shape the environments in which we live, work, and gather. Building
+                  codes, zoning bylaws, and technical standards establish shared expectations for
+                  safety, performance, accessibility, and resilience. They guide how buildings
+                  respond to fire risk, structural forces, environmental conditions, and changing
+                  societal needs. These regulatory systems represent collective agreements about
+                  the minimum conditions required to protect the public interest.
                 </p>
 
                 <p className="text-[19px] leading-[1.85] text-slate-700 mb-7">
-                  Despite their foundational importance, regulatory systems remain largely text-based
-                  and fragmented across jurisdictions. The knowledge embedded in these documents is
-                  interpreted manually by professionals who must navigate multiple sources,
-                  cross-reference requirements, and apply judgment under conditions of uncertainty.
-                  This process requires significant expertise, yet even highly experienced
-                  practitioners can arrive at different interpretations, contributing to delays,
-                  redesign costs, and inconsistent outcomes.
+                  Modern building codes evolve through collaboration among architects, engineers,
+                  regulators, researchers, and industry professionals. Consensus-based processes
+                  ensure that standards reflect both technical expertise and practical experience.
+                  Through structured review cycles, proposed changes are evaluated, refined, and
+                  incorporated into updated requirements. This approach builds trust and stability,
+                  while supporting gradual integration of new knowledge.
                 </p>
 
                 <p className="text-[19px] leading-[1.85] text-slate-700 mb-7">
-                  As demands on the built environment increase, the limitations of document-based
-                  regulatory systems become more visible. Housing shortages, aging infrastructure,
-                  climate adaptation needs, and rapid urbanization all require faster yet equally
-                  reliable decision-making. Governments and industry are investing in digital
-                  permitting platforms and workflow automation, yet the underlying regulatory
-                  knowledge often remains unstructured, limiting the effectiveness of these tools.
+                  This evolution is inherently iterative. Standards are informed by research,
+                  lessons learned from building performance, and emerging priorities such as
+                  energy efficiency, accessibility, and climate resilience. Interpretation plays
+                  a critical role in this process, allowing requirements to be applied across
+                  diverse building types and local conditions. However, as regulatory systems
+                  expand, interconnected provisions, cross-references, and jurisdictional
+                  variations introduce increasing complexity for both regulators and practitioners.
                 </p>
 
                 <p className="text-[19px] leading-[1.85] text-slate-700 mb-7">
-                  As regulatory systems become increasingly complex, existing tools such as document
-                  search, workflow automation, and compliance software do not fully address the
-                  challenge of interpreting interconnected regulatory requirements. While these tools
-                  improve access to documents and streamline administrative processes, they do not
-                  fundamentally resolve the difficulty of understanding how multiple provisions
-                  interact across codes, bylaws, standards, and policies.
-                </p>
-
-                {/* Definition callout */}
-                <div className="my-12 px-8 py-7 bg-slate-50 rounded-2xl border border-slate-100">
-                  <div className="flex items-center gap-2.5 mb-3.5 flex-wrap">
-                    <span className="bg-slate-900 text-white px-2.5 py-1 rounded text-[10px] font-bold tracking-[0.08em] inline-flex items-center gap-1.5">
-                      <Info className="w-3 h-3" />
-                      DEFINITION
-                    </span>
-                    <span className="text-[13px] text-orange-600 font-semibold tracking-[0.05em] uppercase">
-                      Regulatory Intelligence Infrastructure (RII)
-                    </span>
-                  </div>
-                  <p className="text-[17px] leading-relaxed text-slate-900 font-medium">
-                    Systems designed to transform complex regulatory frameworks into structured,
-                    machine-readable knowledge that supports clearer and more consistent decision-making.
-                  </p>
-                </div>
-
-                <p className="text-[19px] leading-[1.85] text-slate-700 mb-7">
-                  This gap points to the need for a new form of digital infrastructure capable of
-                  structuring regulatory knowledge into usable intelligence. We refer to this emerging
-                  category as{" "}
-                  <strong className="text-slate-900 font-semibold">
-                    Regulatory Intelligence Infrastructure (RII)
-                  </strong>{" "}
-                  — systems designed to transform complex regulatory frameworks into structured,
-                  machine-readable knowledge that supports clearer and more consistent decision-making.
-                </p>
-
-                <p className="text-[19px] leading-[1.85] text-slate-700 mb-7">
-                  Regulatory knowledge has not traditionally been considered infrastructure, yet it
-                  functions as a foundational layer shaping every project. Like transportation
-                  networks or utilities, regulatory systems coordinate complex activity across many
-                  participants. When this knowledge is difficult to interpret consistently, friction
-                  emerges across the entire ecosystem. By structuring regulatory information into
-                  accessible intelligence, RII enables regulatory systems to function more effectively
-                  as shared infrastructure supporting coordinated decision-making.
+                  The pace of technological and environmental change is accelerating. Innovations
+                  in materials, construction methods, and performance-based design are challenging
+                  regulatory systems to evolve more efficiently while maintaining reliability. As
+                  the volume and interdependence of regulatory provisions grow, navigating
+                  requirements becomes more complex across projects and jurisdictions.
                 </p>
 
                 {/* Pull quote */}
                 <div className="my-16 py-10 border-y border-slate-100 text-center">
                   <div className="text-orange-500 text-5xl font-semibold leading-none mb-4">"</div>
                   <p className="text-[clamp(22px,2.5vw,28px)] leading-tight text-slate-900 font-medium tracking-[-0.015em] max-w-[640px] mx-auto">
-                    By structuring regulatory information into accessible intelligence, RII enables
-                    regulatory systems to function more effectively as shared infrastructure
-                    supporting coordinated decision-making.
+                    The challenge is not the intent of standards, but how regulatory knowledge
+                    is structured and accessed.
                   </p>
                 </div>
 
                 <p className="text-[19px] leading-[1.85] text-slate-700 mb-7">
-                  Advances in artificial intelligence and knowledge modeling now make it possible to
-                  rethink how regulatory knowledge can function. By structuring regulations into
-                  machine-readable intelligence, it becomes possible to support more consistent
-                  interpretation while preserving the role of professional judgment. This approach
-                  does not replace expertise; rather, it strengthens the ability of experts to apply
-                  their knowledge with greater clarity and confidence.
+                  The challenge is not the intent of standards, but how regulatory knowledge is
+                  structured and accessed. As systems become more interconnected, traditional
+                  document-based approaches make it increasingly difficult to interpret
+                  requirements consistently and efficiently.
+                </p>
+
+                {/* RII callout */}
+                <div className="my-12 px-8 py-7 bg-slate-50 rounded-2xl border border-slate-100">
+                  <div className="flex items-center gap-2.5 mb-3.5 flex-wrap">
+                    <span className="bg-slate-900 text-white px-2.5 py-1 rounded text-[10px] font-bold tracking-[0.08em] inline-flex items-center gap-1.5">
+                      <Info className="w-3 h-3" />
+                      KEY CONCEPT
+                    </span>
+                    <span className="text-[13px] text-orange-600 font-semibold tracking-[0.05em] uppercase">
+                      Regulatory Intelligence Infrastructure (RII)
+                    </span>
+                  </div>
+                  <p className="text-[17px] leading-relaxed text-slate-900 font-medium">
+                    A continuation of the evolution of standards — structuring regulatory
+                    knowledge into machine-readable relationships to enable clearer interpretation
+                    while preserving the central role of professional expertise.
+                  </p>
+                </div>
+
+                <p className="text-[19px] leading-[1.85] text-slate-700 mb-7">
+                  <strong className="text-slate-900 font-semibold">
+                    Regulatory Intelligence Infrastructure (RII)
+                  </strong>{" "}
+                  represents a continuation of the evolution of standards. By structuring
+                  regulatory knowledge into machine-readable relationships, RII enables clearer
+                  interpretation of interconnected requirements while preserving the central role
+                  of professional expertise. Rather than replacing consensus processes, it
+                  strengthens them — supporting a more consistent and transparent understanding
+                  of how standards are applied in practice.
                 </p>
 
                 <p className="text-[19px] leading-[1.85] text-slate-700">
-                  Reframing regulatory knowledge in this way does not change the authority of
-                  standards. It strengthens their usability, preserving intent while enabling clarity
-                  at scale.
+                  As standards continue to evolve, the ability to navigate regulatory knowledge
+                  more consistently may become an important component of how the built environment
+                  adapts to changing technologies, risks, and societal priorities.
                 </p>
               </article>
 
@@ -367,45 +355,43 @@ export default function PaperPage(): ReactElement {
                   </span>
                 </div>
                 <p className="relative text-[clamp(20px,2.2vw,26px)] leading-[1.35] font-semibold tracking-[-0.015em]">
-                  Recognizing regulatory knowledge as infrastructure highlights the need to structure
-                  it more effectively, enabling clearer interpretation, reduced friction, and more
-                  consistent decision-making across the built environment.
+                  Standards will continue to evolve, but their impact will increasingly depend
+                  on how effectively regulatory knowledge can be structured and navigated to
+                  support consistent, real-world application.
                 </p>
               </div>
 
               {/* CONTINUED */}
-              <Link
+              <div
                 id="continued"
-                href="/research/how-standards-are-born"
-                className="group mt-8 bg-gradient-to-br from-white to-slate-50 border border-slate-100 rounded-3xl p-8 grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-6 items-start shadow-sm transition-all duration-300 hover:border-orange-500 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(255,107,53,0.12)]"
+                className="mt-8 bg-gradient-to-br from-white to-slate-50 border border-slate-100 rounded-3xl p-8 grid grid-cols-1 sm:grid-cols-[auto_1fr] gap-6 items-start shadow-sm"
               >
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 text-white flex items-center justify-center shrink-0 shadow-[0_8px_24px_rgba(255,107,53,0.30)]">
                   <ArrowRight className="w-[26px] h-[26px]" />
                 </div>
                 <div>
                   <div className="text-[11px] text-orange-600 tracking-[0.2em] uppercase font-bold mb-3">
-                    Up next · Paper 02
+                    To be continued
                   </div>
                   <h3 className="text-2xl font-bold tracking-tight leading-tight mb-3 text-slate-900">
-                    How Standards Are Born
+                    The next paper in the series
                   </h3>
                   <p className="text-base leading-relaxed text-slate-700 mb-4">
-                    The evolution of building codes and regulatory systems — and how increasing
-                    complexity is challenging how regulatory knowledge is structured, interpreted,
-                    and applied in practice.
+                    The next paper explores how regulatory interpretation functions in practice,
+                    examining how professionals navigate complex requirements and where
+                    opportunities exist to improve clarity and confidence in decision-making.
                   </p>
-                  <span className="inline-flex items-center gap-1.5 text-[13px] text-orange-600 font-semibold transition-all group-hover:gap-3">
-                    Read Paper 02
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </span>
+                  <div className="text-[13px] text-slate-500">
+                    <strong className="text-slate-900 font-semibold">Maple Rose Furigay, PMP®</strong>
+                  </div>
                 </div>
-              </Link>
+              </div>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* AUTHOR (full width) */}
+      {/* AUTHOR */}
       <section className="bg-white border-t border-slate-100 py-16">
         <Container className="max-w-[880px]">
           <div className="flex gap-6 items-center p-7 bg-white border border-slate-100 rounded-2xl flex-wrap">

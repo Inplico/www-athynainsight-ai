@@ -155,20 +155,59 @@ export default function ResearchPage(): ReactElement {
               </div>
             </Link>
 
-            {/* Coming soon */}
+            {/* Paper 02 */}
+            <Link
+              href="/research/how-standards-are-born"
+              className="group relative flex flex-col bg-white border border-slate-100 rounded-2xl p-10 min-h-[380px] shadow-[0_1px_2px_rgba(15,23,42,0.04)] transition-all duration-300 hover:border-orange-500 hover:-translate-y-1 hover:shadow-[0_1px_0_rgba(255,107,53,0.08),0_8px_24px_rgba(15,23,42,0.06),0_24px_56px_rgba(255,107,53,0.10)] overflow-hidden"
+            >
+              <div
+                aria-hidden
+                className="absolute -top-1/2 -right-[30%] w-[80%] aspect-square pointer-events-none"
+                style={{
+                  background: "radial-gradient(closest-side, rgba(255,107,53,0.08), transparent 70%)",
+                  filter: "blur(40px)",
+                }}
+              />
+              <div className="relative z-[2] flex justify-between items-start mb-7">
+                <span className="bg-slate-900 text-white px-4 py-2 rounded-full text-[11px] font-semibold tracking-[0.1em]">
+                  PAPER 02
+                </span>
+                <span className="text-4xl font-bold text-slate-300 tracking-[-0.04em] leading-none">02</span>
+              </div>
+              <h3 className="relative z-[2] text-[26px] font-bold tracking-[-0.02em] leading-[1.1] text-slate-900 mb-3">
+                How Standards Are Born
+              </h3>
+              <div className="relative z-[2] text-[15px] text-slate-700 leading-relaxed mb-5">
+                The Evolution of Building Codes and Regulatory Systems
+              </div>
+              <div className="relative z-[2] text-sm leading-relaxed text-slate-700 bg-slate-50 rounded-xl p-4 mb-6 flex-1">
+                Increasing complexity is challenging how regulatory knowledge is structured, interpreted, and applied in practice.
+              </div>
+              <div className="relative z-[2] flex justify-between items-center pt-5 border-t border-slate-100 text-[13px] text-slate-500">
+                <span>
+                  By <strong className="text-slate-900 font-semibold">Maple Rose Furigay, PMP®</strong>
+                </span>
+                <span className="inline-flex items-center gap-1.5 text-orange-600 font-semibold transition-all group-hover:gap-3">
+                  Read
+                  <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
+            </Link>
+
+            {/* Paper 03 — coming soon */}
             <div className="relative flex flex-col bg-white border border-dashed border-slate-200 rounded-2xl p-10 min-h-[380px] opacity-90">
               <div className="flex justify-between items-start mb-7">
                 <span className="bg-slate-100 text-slate-500 px-4 py-2 rounded-full text-[11px] font-semibold tracking-[0.1em]">
                   COMING SOON
                 </span>
-                <span className="text-4xl font-bold text-slate-200 tracking-[-0.04em] leading-none">02</span>
+                <span className="text-4xl font-bold text-slate-200 tracking-[-0.04em] leading-none">03</span>
               </div>
               <h3 className="text-[26px] font-bold tracking-[-0.02em] leading-[1.1] text-slate-500 mb-3">
                 The next paper in the series
               </h3>
               <div className="text-[15px] text-slate-500 leading-relaxed mb-5">Title forthcoming</div>
               <div className="text-sm leading-relaxed text-slate-500 bg-slate-50 rounded-xl p-4 mb-6 flex-1">
-                How building codes and standards evolve through collective expertise and shared knowledge.
+                How regulatory interpretation functions in practice, examining how professionals navigate complex requirements.
               </div>
               <div className="flex justify-between items-center pt-5 border-t border-slate-100 text-[13px] text-slate-500">
                 <span>
