@@ -272,20 +272,59 @@ export default function ResearchPage(): ReactElement {
               </div>
             </Link>
 
-            {/* Paper 05 — coming soon */}
+            {/* Paper 05 */}
+            <Link
+              href="/research/human-machine-collaboration"
+              className="group relative flex flex-col bg-white border border-slate-100 rounded-2xl p-10 min-h-[380px] shadow-[0_1px_2px_rgba(15,23,42,0.04)] transition-all duration-300 hover:border-orange-500 hover:-translate-y-1 hover:shadow-[0_1px_0_rgba(255,107,53,0.08),0_8px_24px_rgba(15,23,42,0.06),0_24px_56px_rgba(255,107,53,0.10)] overflow-hidden"
+            >
+              <div
+                aria-hidden
+                className="absolute -top-1/2 -right-[30%] w-[80%] aspect-square pointer-events-none"
+                style={{
+                  background: "radial-gradient(closest-side, rgba(255,107,53,0.08), transparent 70%)",
+                  filter: "blur(40px)",
+                }}
+              />
+              <div className="relative z-[2] flex justify-between items-start mb-7">
+                <span className="bg-slate-900 text-white px-4 py-2 rounded-full text-[11px] font-semibold tracking-[0.1em]">
+                  PAPER 05
+                </span>
+                <span className="text-4xl font-bold text-slate-300 tracking-[-0.04em] leading-none">05</span>
+              </div>
+              <h3 className="relative z-[2] text-[26px] font-bold tracking-[-0.02em] leading-[1.1] text-slate-900 mb-3">
+                Human + Machine Collaboration
+              </h3>
+              <div className="relative z-[2] text-[15px] text-slate-700 leading-relaxed mb-5">
+                Elevating Expertise Through Structured Intelligence
+              </div>
+              <div className="relative z-[2] text-sm leading-relaxed text-slate-700 bg-slate-50 rounded-xl p-4 mb-6 flex-1">
+                AI does not replace professional expertise &mdash; it amplifies it, structuring knowledge to support clearer interpretation, consistent application, and stronger decision-making.
+              </div>
+              <div className="relative z-[2] flex justify-between items-center pt-5 border-t border-slate-100 text-[13px] text-slate-500">
+                <span>
+                  By <strong className="text-slate-900 font-semibold">Maple Rose Furigay, PMP®</strong>
+                </span>
+                <span className="inline-flex items-center gap-1.5 text-orange-600 font-semibold transition-all group-hover:gap-3">
+                  Read
+                  <ArrowRight className="w-4 h-4" />
+                </span>
+              </div>
+            </Link>
+
+            {/* Paper 06 — coming soon */}
             <div className="relative flex flex-col bg-white border border-dashed border-slate-200 rounded-2xl p-10 min-h-[380px] opacity-90">
               <div className="flex justify-between items-start mb-7">
                 <span className="bg-slate-100 text-slate-500 px-4 py-2 rounded-full text-[11px] font-semibold tracking-[0.1em]">
                   COMING SOON
                 </span>
-                <span className="text-4xl font-bold text-slate-200 tracking-[-0.04em] leading-none">05</span>
+                <span className="text-4xl font-bold text-slate-200 tracking-[-0.04em] leading-none">06</span>
               </div>
               <h3 className="text-[26px] font-bold tracking-[-0.02em] leading-[1.1] text-slate-500 mb-3">
                 The next paper in the series
               </h3>
               <div className="text-[15px] text-slate-500 leading-relaxed mb-5">Title forthcoming</div>
               <div className="text-sm leading-relaxed text-slate-500 bg-slate-50 rounded-xl p-4 mb-6 flex-1">
-                How human expertise and machine intelligence can work together &mdash; elevating professional judgment while preserving the critical role of human interpretation.
+                How structured regulatory intelligence can become a long-term knowledge asset &mdash; capturing expertise, supporting continuity across generations, and enabling learning systems for the built environment.
               </div>
               <div className="flex justify-between items-center pt-5 border-t border-slate-100 text-[13px] text-slate-500">
                 <span>
