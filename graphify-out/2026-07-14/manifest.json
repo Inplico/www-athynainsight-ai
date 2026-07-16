@@ -1,0 +1,282 @@
+{
+  ".vscode/settings.json": {
+    "mtime": 1783176650.9453797,
+    "ast_hash": "c81d6c8b1d103ff3ae2388d516b1702c",
+    "semantic_hash": "c81d6c8b1d103ff3ae2388d516b1702c"
+  },
+  "deploy.sh": {
+    "mtime": 1754948213.4652624,
+    "ast_hash": "119400a2e8b8b64f764b9a56f6427620",
+    "semantic_hash": "119400a2e8b8b64f764b9a56f6427620"
+  },
+  "eslint.config.mjs": {
+    "mtime": 1754517006.1712964,
+    "ast_hash": "9a684bd53e32ef563aa034e02183af56",
+    "semantic_hash": "9a684bd53e32ef563aa034e02183af56"
+  },
+  "next.config.ts": {
+    "mtime": 1754516366.1422346,
+    "ast_hash": "bce53b97dbbfab3b9f923ffbbe045033",
+    "semantic_hash": "bce53b97dbbfab3b9f923ffbbe045033"
+  },
+  "package.json": {
+    "mtime": 1765605914.0196216,
+    "ast_hash": "4af420adf0ad28158dd246786457d2d3",
+    "semantic_hash": "4af420adf0ad28158dd246786457d2d3"
+  },
+  "postcss.config.mjs": {
+    "mtime": 1754516913.3880198,
+    "ast_hash": "d3fd1d29b05a09ff76b595a70e1e7d50",
+    "semantic_hash": "d3fd1d29b05a09ff76b595a70e1e7d50"
+  },
+  "scripts/billing-monitor.sh": {
+    "mtime": 1754517359.23512,
+    "ast_hash": "938ffbdb9f93e9ad94d99d55d5bd7ec0",
+    "semantic_hash": "938ffbdb9f93e9ad94d99d55d5bd7ec0"
+  },
+  "scripts/deploy.sh": {
+    "mtime": 1754519641.307551,
+    "ast_hash": "99480845c09b126939c46fa00e3e8185",
+    "semantic_hash": "99480845c09b126939c46fa00e3e8185"
+  },
+  "scripts/setup-github-actions.sh": {
+    "mtime": 1754516432.4904337,
+    "ast_hash": "44795cb06e5aa2e60d92af5cdf64e167",
+    "semantic_hash": "44795cb06e5aa2e60d92af5cdf64e167"
+  },
+  "scripts/setup-loops-auto.ts": {
+    "mtime": 1754950388.5852518,
+    "ast_hash": "ad9f9a03cf1e1d4d704ef1104f2cb5a9",
+    "semantic_hash": "ad9f9a03cf1e1d4d704ef1104f2cb5a9"
+  },
+  "scripts/setup-loops-simplified.ts": {
+    "mtime": 1754949038.6895185,
+    "ast_hash": "07e4e1f84e8fe3ac5281024a5077d171",
+    "semantic_hash": "07e4e1f84e8fe3ac5281024a5077d171"
+  },
+  "scripts/setup-loops.ts": {
+    "mtime": 1754949045.355639,
+    "ast_hash": "d3e282435a4a7a9705b5f8b9056f2c62",
+    "semantic_hash": "d3e282435a4a7a9705b5f8b9056f2c62"
+  },
+  "scripts/setup-terraform-simple.sh": {
+    "mtime": 1754516455.1802485,
+    "ast_hash": "a049597ad7e9e64b260281ce5e368b23",
+    "semantic_hash": "a049597ad7e9e64b260281ce5e368b23"
+  },
+  "scripts/setup-terraform.sh": {
+    "mtime": 1754519677.4288251,
+    "ast_hash": "8f87df5e3779b44ee9d9c3747ea0c269",
+    "semantic_hash": "8f87df5e3779b44ee9d9c3747ea0c269"
+  },
+  "src/app/about/page.tsx": {
+    "mtime": 1754518530.8165445,
+    "ast_hash": "83de915556d080a4f1ffce1c267e20db",
+    "semantic_hash": "83de915556d080a4f1ffce1c267e20db"
+  },
+  "src/app/api/loops-capture/route.ts": {
+    "mtime": 1756924180.159659,
+    "ast_hash": "96ea9d22a2ecf4f2db04adf0824f0dac",
+    "semantic_hash": "96ea9d22a2ecf4f2db04adf0824f0dac"
+  },
+  "src/app/blog/[slug]/page.tsx": {
+    "mtime": 1754516704.0461864,
+    "ast_hash": "d6bc6e334a55779d6e8b04fbe5bb1a40",
+    "semantic_hash": "d6bc6e334a55779d6e8b04fbe5bb1a40"
+  },
+  "src/app/blog/page.tsx": {
+    "mtime": 1754517242.4120483,
+    "ast_hash": "393040d16126da35752b2bc2d8fcf9b1",
+    "semantic_hash": "393040d16126da35752b2bc2d8fcf9b1"
+  },
+  "src/app/contact/page.tsx": {
+    "mtime": 1754516704.046867,
+    "ast_hash": "a32f490263a01c8d434f475e901733dd",
+    "semantic_hash": "a32f490263a01c8d434f475e901733dd"
+  },
+  "src/app/layout.tsx": {
+    "mtime": 1756421204.0221207,
+    "ast_hash": "3686d1b72cbf650636c2f6c40999711c",
+    "semantic_hash": "3686d1b72cbf650636c2f6c40999711c"
+  },
+  "src/app/page.tsx": {
+    "mtime": 1754519389.8985703,
+    "ast_hash": "491fb7600f518d1b356b9eb86203fc71",
+    "semantic_hash": "491fb7600f518d1b356b9eb86203fc71"
+  },
+  "src/app/privacy-policy/page.tsx": {
+    "mtime": 1756418869.1202617,
+    "ast_hash": "60761064d4bdf05fc6bb0c730a8ef5cd",
+    "semantic_hash": "60761064d4bdf05fc6bb0c730a8ef5cd"
+  },
+  "src/app/research/how-standards-are-born/page.tsx": {
+    "mtime": 1781123562.0970318,
+    "ast_hash": "2dde3b63e30541c2abffdb6b3e3ef5cf",
+    "semantic_hash": "2dde3b63e30541c2abffdb6b3e3ef5cf"
+  },
+  "src/app/research/human-machine-collaboration/page.tsx": {
+    "mtime": 1783177108.6666276,
+    "ast_hash": "c924e19f56aee363f3877fcafd493259",
+    "semantic_hash": "c924e19f56aee363f3877fcafd493259"
+  },
+  "src/app/research/introduction/page.tsx": {
+    "mtime": 1781123562.0972111,
+    "ast_hash": "ab209ab108b6c1658c07403d393f40c2",
+    "semantic_hash": "ab209ab108b6c1658c07403d393f40c2"
+  },
+  "src/app/research/page.tsx": {
+    "mtime": 1783177108.667217,
+    "ast_hash": "4020d8045e62bc686071a48397418097",
+    "semantic_hash": "4020d8045e62bc686071a48397418097"
+  },
+  "src/app/research/regulatory-intelligence-infrastructure/page.tsx": {
+    "mtime": 1782403311.0646064,
+    "ast_hash": "acf03334de595add8c980e2d995a5ca3",
+    "semantic_hash": "acf03334de595add8c980e2d995a5ca3"
+  },
+  "src/app/research/the-invisible-infrastructure/page.tsx": {
+    "mtime": 1781123562.097465,
+    "ast_hash": "c83dc54f1ea24d3d1aeffa27bec38edc",
+    "semantic_hash": "c83dc54f1ea24d3d1aeffa27bec38edc"
+  },
+  "src/app/research/when-standards-become-constraints/page.tsx": {
+    "mtime": 1781123562.0975904,
+    "ast_hash": "4d9d16d0f79b5405d61ca3c1be71cfa0",
+    "semantic_hash": "4d9d16d0f79b5405d61ca3c1be71cfa0"
+  },
+  "src/components/client-only.tsx": {
+    "mtime": 1754516678.8757312,
+    "ast_hash": "c7e3614b37bb6bb0a2debcccab1a5366",
+    "semantic_hash": "c7e3614b37bb6bb0a2debcccab1a5366"
+  },
+  "src/components/layout/footer.tsx": {
+    "mtime": 1754518579.1257408,
+    "ast_hash": "bc508d9303263ea0fb47b37d2e3f589d",
+    "semantic_hash": "bc508d9303263ea0fb47b37d2e3f589d"
+  },
+  "src/components/layout/header.tsx": {
+    "mtime": 1756418299.7926984,
+    "ast_hash": "590c5c9106b58dca1af25b7941cc8d50",
+    "semantic_hash": "590c5c9106b58dca1af25b7941cc8d50"
+  },
+  "src/components/layout/newsletter-banner-wrapper.tsx": {
+    "mtime": 1754516678.8781145,
+    "ast_hash": "915174a2767fc8ad9796e8ce9292ba99",
+    "semantic_hash": "915174a2767fc8ad9796e8ce9292ba99"
+  },
+  "src/components/layout/newsletter-banner.tsx": {
+    "mtime": 1754516678.8788884,
+    "ast_hash": "e67b9c001a576c7d6f3d760fdb63ce44",
+    "semantic_hash": "e67b9c001a576c7d6f3d760fdb63ce44"
+  },
+  "src/components/layout/simple-footer.tsx": {
+    "mtime": 1781123562.0987556,
+    "ast_hash": "8a627f40ceb4df5683d118b327fee309",
+    "semantic_hash": "8a627f40ceb4df5683d118b327fee309"
+  },
+  "src/components/layout/simple-header.tsx": {
+    "mtime": 1781123562.0990312,
+    "ast_hash": "b614b6193c766dce3e61b649d0288308",
+    "semantic_hash": "b614b6193c766dce3e61b649d0288308"
+  },
+  "src/components/sections/cta.tsx": {
+    "mtime": 1754519062.849987,
+    "ast_hash": "c9b1af8e207d187306d6acaad55b555c",
+    "semantic_hash": "c9b1af8e207d187306d6acaad55b555c"
+  },
+  "src/components/sections/hero.tsx": {
+    "mtime": 1754518989.6054425,
+    "ast_hash": "ddb5b60c632e04c37daed137813e3be1",
+    "semantic_hash": "ddb5b60c632e04c37daed137813e3be1"
+  },
+  "src/components/sections/lead-capture.tsx": {
+    "mtime": 1781123562.099699,
+    "ast_hash": "6fba5aa5fa21d6066db7d57c0f83a660",
+    "semantic_hash": "6fba5aa5fa21d6066db7d57c0f83a660"
+  },
+  "src/components/sections/pillars.tsx": {
+    "mtime": 1754519019.4897504,
+    "ast_hash": "c6eb73c7bb4a5f76cbcc7c6b41641593",
+    "semantic_hash": "c6eb73c7bb4a5f76cbcc7c6b41641593"
+  },
+  "src/components/sections/programs.tsx": {
+    "mtime": 1754519035.0627022,
+    "ast_hash": "e4362b95738d2bf36d242d4be313ce20",
+    "semantic_hash": "e4362b95738d2bf36d242d4be313ce20"
+  },
+  "src/components/sections/services-grid.tsx": {
+    "mtime": 1754519027.2199204,
+    "ast_hash": "0b3f918a2513311bac10b9fbd843cae4",
+    "semantic_hash": "0b3f918a2513311bac10b9fbd843cae4"
+  },
+  "src/components/sections/simple-hero.tsx": {
+    "mtime": 1781123562.0998094,
+    "ast_hash": "c091d2ad0a479b35372734a7e1406311",
+    "semantic_hash": "c091d2ad0a479b35372734a7e1406311"
+  },
+  "src/components/sections/value-prop.tsx": {
+    "mtime": 1754518995.9181237,
+    "ast_hash": "58abc3b18a409e4787f8e3ce2ad61652",
+    "semantic_hash": "58abc3b18a409e4787f8e3ce2ad61652"
+  },
+  "src/components/ui/button.tsx": {
+    "mtime": 1754516678.8841414,
+    "ast_hash": "7468dbb2823f893eb61ebcfa68352adf",
+    "semantic_hash": "7468dbb2823f893eb61ebcfa68352adf"
+  },
+  "src/components/ui/container.tsx": {
+    "mtime": 1754516678.8830853,
+    "ast_hash": "9bdccea87c3cf376fab8f4d7df25a475",
+    "semantic_hash": "9bdccea87c3cf376fab8f4d7df25a475"
+  },
+  "src/components/ui/linkedin-subscribe.tsx": {
+    "mtime": 1754516678.8834288,
+    "ast_hash": "c6a05349ed83a295c76279ac0ed5b0ef",
+    "semantic_hash": "c6a05349ed83a295c76279ac0ed5b0ef"
+  },
+  "src/components/ui/parallax-banner.tsx": {
+    "mtime": 1754516678.88273,
+    "ast_hash": "a3809ac977ba8301dafd2d21b71c153c",
+    "semantic_hash": "a3809ac977ba8301dafd2d21b71c153c"
+  },
+  "src/components/ui/parallax-transition.tsx": {
+    "mtime": 1754516678.8838077,
+    "ast_hash": "ebc64701fa705b6d7ac33bc29c3be014",
+    "semantic_hash": "ebc64701fa705b6d7ac33bc29c3be014"
+  },
+  "src/components/ui/stat-card.tsx": {
+    "mtime": 1754516678.8845036,
+    "ast_hash": "c685bc8a0c12ed6190c1b975590bc10a",
+    "semantic_hash": "c685bc8a0c12ed6190c1b975590bc10a"
+  },
+  "src/lib/constants.ts": {
+    "mtime": 1754519465.7166944,
+    "ast_hash": "993754692655c75aa2cac882a78928ac",
+    "semantic_hash": "993754692655c75aa2cac882a78928ac"
+  },
+  "src/lib/types.ts": {
+    "mtime": 1754516686.0331182,
+    "ast_hash": "9ac2d379a8fff04a3003ce02d133f405",
+    "semantic_hash": "9ac2d379a8fff04a3003ce02d133f405"
+  },
+  "src/lib/utils.ts": {
+    "mtime": 1754516686.033661,
+    "ast_hash": "9730fcb08cca64778c775aae2104cc32",
+    "semantic_hash": "9730fcb08cca64778c775aae2104cc32"
+  },
+  "tailwind.config.ts": {
+    "mtime": 1754516725.6535428,
+    "ast_hash": "3006436f736206282e57fcd3e37823f9",
+    "semantic_hash": "3006436f736206282e57fcd3e37823f9"
+  },
+  "terraform-athyna/main.tf": {
+    "mtime": 1754948035.4802454,
+    "ast_hash": "2b0f4d3ec33d3c7d8ecd14cac053ab8a",
+    "semantic_hash": "2b0f4d3ec33d3c7d8ecd14cac053ab8a"
+  },
+  "tsconfig.json": {
+    "mtime": 1754516948.3039424,
+    "ast_hash": "0cf97a81150d3b8904f285780896980d",
+    "semantic_hash": "0cf97a81150d3b8904f285780896980d"
+  }
+}

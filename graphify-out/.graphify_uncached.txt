@@ -1,0 +1,43 @@
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/.github/workflows/deploy.yml
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/AGENTS.md
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/DEPLOYMENT.md
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/README.md
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/SESSION_NOTES.md
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/docs/LOOPS_SETUP.md
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/docs/welcome-email.html
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/src/content/blog/0001-ai-transformed-team-communication.md
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/src/content/blog/0002-scaling-your-startup.md
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/src/content/blog/0003-from-frustrated-to-flourishing.md
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/src/content/blog/0004-building-with-ai.md
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/src/content/blog/0005-saas-is-dead.md
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/src/content/blog/0006-ai-emotional-architecture.md
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/src/content/blog/0007-llmops-organizational-transformation-2025.md
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/src/content/blog/0008-building-code-ai-revolution.md
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/src/content/blog/0009-expert-validation-ai-systems.md
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/src/content/blog/0010-regulatory-ai-market-transformation.md
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/android-chrome-192x192.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/android-chrome-512x512.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/apple-touch-icon.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/favicon-16x16.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/favicon-32x32.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/file.svg
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/globe.svg
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/about/cian-cto.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/about/cian-priest.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/blog/0001.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/blog/0002.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/blog/0003.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/blog/0004.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/blog/0005.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/blog/0006.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/blog/0007.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/blog/AITT Logo-transparent.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/blog/AITT Logo.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/brand/Athyna Insight_Logo Only_TransparentBG.jpeg
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/brand/Athyna Insight_Logo Only_TransparentBG.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/brand/Athyna Insight_Secondary Logo_TransparentBG.jpeg
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/brand/Athyna Insight_Secondary Logo_TransparentBG.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/brand/athyna-logo-original.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/images/brand/athyna-logo.png
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/next.svg
+/Users/cian/Documents/GitHub/inplico/www-athynainsight-ai/public/window.svg

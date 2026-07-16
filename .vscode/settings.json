@@ -1,4 +1,5 @@
 {
     "snyk.advanced.autoSelectOrganization": true,
-    "jest.enable": false
+    "jest.enable": false,
+    "snyk.advanced.organization": "d4daeaf8-25e5-43d1-9785-ab0af45df6a7"
 }
